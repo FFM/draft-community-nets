@@ -7,3 +7,7 @@
 `git clone https://github.com/FFM/draft-community-nets/`
    or clone in github
   * send pull requests
+
+# How to build the RFC txt and/or XML document?
+  * `make`
+
