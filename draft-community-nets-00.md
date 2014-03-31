@@ -44,7 +44,7 @@
     <keyword>Internet-Draft</keyword>
     <abstract>
       <t>
-		Roughly ten years ago, a huge number of so called community wireless networks appeared worldwide, often employing mesh routing based on cheap off the shelf Wi-Fi equipment and often enough covering whole cities. These community wireless networks had notable successes in deploying results from the IETF MANET working group (for example OLSR RFC3626 XXX fix reference properly XXX). In addition, there have been some interesting lessons learned from deploying these large MANETs. This document discusses the structures and findings of the community networks.
+		Roughly ten years ago, a large number of so called community wireless networks appeared worldwide, often employing mesh routing based on cheap off the shelf Wi-Fi equipment and often enough covering whole cities. These community wireless networks had notable successes in deploying results from the IETF MANET working group (for example OLSR RFC3626 XXX fix reference properly XXX). In addition, there have been some interesting lessons learned from deploying these large MANETs. This document discusses the structures and findings of the community networks.
       </t>
       <t>
       </t>
