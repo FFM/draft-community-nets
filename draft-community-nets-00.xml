@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+]>
+
+<!-- <rfc ipr="xxx" docName="draft-community-wireless-nets-00" category="info" > -->
+<rfc docName="draft-community-wireless-nets-00" category="info" >
+
+<?rfc toc="yes"?>
+<?rfc sortrefs="yes"?>
+<?rfc symrefs="yes" ?>
+
+  <front>
+    <title abbrev="CWNs">
+	  A  case study on community wireless networks -
+      experiences from the trenches
+    </title>
+    <author initials="L. Aaron" surname="Kaplan" fullname="L. aaron Kaplan">
+      <organization>Funkfeuer Wien</organization>
+      <address>
+        <email>aaron@lo-res.org</email>
+      </address>
+    </author>
+    <author initials="E" surname="Baccelli" fullname="Emmanuel Baccelli">
+      <organization>INRIA</organization>
+      <address>
+        <postal>
+          <street></street>
+          <city></city>
+          <code></code>
+          <country>Germany</country>
+        </postal>
+        <phone></phone>
+        <facsimile></facsimile>
+        <email>XXX</email>
+      </address>
+    </author>
+
+    <date year="2014" month="April" day="2"/>
+
+    <area>General</area>
+    <workgroup>GAIA IRTF Group</workgroup>
+    <keyword>Internet-Draft</keyword>
+    <abstract>
+      <t>
+		Roughly ten years ago, a huge number of so called community wireless networks appeared worldwide, often employing mesh routing based on cheap off the shelf Wi-Fi equipment and often enough covering whole cities. These community wireless networks had notable successes in deploying results from the IETF MANET working group (for example OLSR RFC3626 XXX fix reference properly XXX). In addition, there have been some interesting lessons learned from deploying these large MANETs. This document discusses the structures and findings of the community networks.
+      </t>
+      <t>
+      </t>
+    </abstract>
+  </front>
+
+  <middle>
+
+
+<section anchor="meta" title="meta">
+<t>author:
+  -
+    ins: Funkfeuer
+    name: L. Aaron Kaplan
+    org: Funkfeuer.at
+    email: aaron@lo-res.org
+    country: Austria
+    role: editor
+  -
+    ins: INRIA
+    name: Emmanuel Baccelli
+    org: Freie Universität, Institut für Informatik
+    role: editor
+    street: Room 148, Takustrasse 9
+    city: Berlin
+    code: 14195
+    country: Germany
+    phone: “+358407796297”
+    email: Emmanuel “dot” Baccelli “at” inria “dot” fr</t>
+
+<t><list style='symbols'>
+  <t>url: https://etherpad.funkfeuer.at/p/I-D_CWNs</t>
+</list></t>
+
+</section>
+<section anchor="intro" title="Intro">
+
+</section>
+<section anchor="disclaimer" title="Disclaimer?">
+<t>We are not claiming to be exhaustive for all CWNs
+You are welcome to contribute… here is the gihub page and send us pull requests</t>
+
+</section>
+<section anchor="motivation-for-this-draft" title="Motivation for this draft">
+<t>“here is the stuff where your results are actually used” -&gt; MANET WG and academic community
+ for gaia: how to build these networks</t>
+
+</section>
+<section anchor="definitions" title="Definitions">
+<t><list style='symbols'>
+  <t>what is a CWN? Comparison to MANETs. Not every CWN is a MANET. But where MANETs make sense in CWNs.</t>
+</list></t>
+
+</section>
+<section anchor="why-cwns" title="Why CWNs?">
+<t>on a high level…
+  * because we can
+  * because it’s fun: technical experiment
+  * because it helps with disaster recovery
+  * because it can help in suppressed internet situations
+  * because they complement existing cable based networks: cheap to build, filling up the white spots on the broadband landscape</t>
+
+</section>
+<section anchor="history-genesis" title="History / Genesis">
+<t><list style='symbols'>
+  <t>consume.net, 2003 Freifunk, Funkfeuer, Paris Sans Fils, Seattle Wireless, etc.</t>
+</list></t>
+
+</section>
+<section anchor="current-situation-overview-and-description-of-existing-cwns" title="Current situation / overview and description of existing CWNs">
+<t><list style='symbols'>
+  <t>how do they work?</t>
+  <t>which exist?</t>
+  <t>sizes and how to measure</t>
+  <t>differences between CWNs</t>
+  <t>categorisations</t>
+  <t>interactions (wireless summit, battlemesh)</t>
+</list></t>
+
+</section>
+<section anchor="a-case-study-details-on-ff" title="A case study: details on FF">
+<t><list style='symbols'>
+  <t>social aspects</t>
+  <t>legal aspects</t>
+  <t>special discussion on things relating to MANET WG</t>
+  <t>metrics</t>
+  <t>management of nodes</t>
+</list></t>
+
+</section>
+<section anchor="case-study-2-details-on-xyz-freifunk-" title="case study 2: details on XYZ / Freifunk / …">
+
+</section>
+<section anchor="lessons-learned" title="Lessons learned">
+<t>users of CWNs are describing their lessons learned
+  * special discussion on things relating to GAIA/MANET WG
+  * metrics
+  * security - how to deal with routing security issues in CWNs?
+  * legal framework lacks/challenges</t>
+
+</section>
+<section anchor="reality-check-on-current-research-topics-what-is-still-needed-where-to-concentrate-on" title="Reality check on current research topics: what is still needed? Where to concentrate on?">
+<t>(This is already an interpretation of the results of the previous chapters)
+  * what did we not yet manage to solve? What are the most stringent needs right now?
+  * for example:
+  * automatic channel assignment - distributed agreement protocol
+  * multi-topology
+  * multipath routing which is channel aware
+  * metrics
+  * CSN
+  * routing security - detection is important!</t>
+
+</section>
+<section anchor="bib" title="Bib">
+<t>… (generated)…</t>
+
+</section>
+<section anchor="meta-1" title="Meta">
+
+<section anchor="stuff-needed" title="Stuff needed">
+
+<t>github repo:
+  * README.markdown
+  * TIMELINE.md
+  * HOWTO-contribute.md</t>
+
+<t>“evangelism”:
+  * contact co-contributors
+  * why should they contribute?
+  * what can the MANET WG learn? GAIA?</t>
+
+<t>howto work on  github?:
+  * send us pull requests!
+  * initial master editors: Emmanuel Baccelli , Aaron Kaplan</t>
+
+</section>
+</section>
+
+</middle>
+
+<back>
+
+  <references title='Normative References'>
+
+
+
+<reference anchor='RFC2119'>
+
+<front>
+<title abbrev='RFC Key Words'>Key words for use in RFCs to Indicate Requirement Levels</title>
+<author initials='S.' surname='Bradner' fullname='Scott Bradner'>
+<organization>Harvard University</organization>
+<address>
+<postal>
+<street>1350 Mass. Ave.</street>
+<street>Cambridge</street>
+<street>MA 02138</street></postal>
+<phone>- +1 617 495 3864</phone>
+<email>sob@harvard.edu</email></address></author>
+<date year='1997' month='March' />
+<area>General</area>
+<keyword>keyword</keyword>
+<abstract>
+<t>
+   In many standards track documents several words are used to signify
+   the requirements in the specification.  These words are often
+   capitalized.  This document defines these words as they should be
+   interpreted in IETF documents.  Authors who follow these guidelines
+   should incorporate this phrase near the beginning of their document:
+
+<list>
+<t>
+      The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL
+      NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and
+      "OPTIONAL" in this document are to be interpreted as described in
+      RFC 2119.
+</t></list></t>
+<t>
+   Note that the force of these words is modified by the requirement
+   level of the document in which they are used.
+</t></abstract></front>
+
+<seriesInfo name='BCP' value='14' />
+<seriesInfo name='RFC' value='2119' />
+<format type='TXT' octets='4723' target='http://www.rfc-editor.org/rfc/rfc2119.txt' />
+<format type='HTML' octets='17970' target='http://xml.resource.org/public/rfc/html/rfc2119.html' />
+<format type='XML' octets='5777' target='http://xml.resource.org/public/rfc/xml/rfc2119.xml' />
+</reference>
+
+
+
+<reference anchor='RFC3986'>
+
+<front>
+<title abbrev='URI Generic Syntax'>Uniform Resource Identifier (URI): Generic Syntax</title>
+<author initials='T.' surname='Berners-Lee' fullname='Tim Berners-Lee'>
+<organization abbrev='W3C/MIT'>World Wide Web Consortium</organization>
+<address>
+<postal>
+<street>Massachusetts Institute of Technology</street>
+<street>77 Massachusetts Avenue</street>
+<city>Cambridge</city>
+<region>MA</region>
+<code>02139</code>
+<country>USA</country></postal>
+<phone>+1-617-253-5702</phone>
+<facsimile>+1-617-258-5999</facsimile>
+<email>timbl@w3.org</email>
+<uri>http://www.w3.org/People/Berners-Lee/</uri></address></author>
+<author initials='R.' surname='Fielding' fullname='Roy T. Fielding'>
+<organization abbrev='Day Software'>Day Software</organization>
+<address>
+<postal>
+<street>5251 California Ave., Suite 110</street>
+<city>Irvine</city>
+<region>CA</region>
+<code>92617</code>
+<country>USA</country></postal>
+<phone>+1-949-679-2960</phone>
+<facsimile>+1-949-679-2972</facsimile>
+<email>fielding@gbiv.com</email>
+<uri>http://roy.gbiv.com/</uri></address></author>
+<author initials='L.' surname='Masinter' fullname='Larry Masinter'>
+<organization abbrev='Adobe Systems'>Adobe Systems Incorporated</organization>
+<address>
+<postal>
+<street>345 Park Ave</street>
+<city>San Jose</city>
+<region>CA</region>
+<code>95110</code>
+<country>USA</country></postal>
+<phone>+1-408-536-3024</phone>
+<email>LMM@acm.org</email>
+<uri>http://larry.masinter.net/</uri></address></author>
+<date year='2005' month='January' />
+<area>Applications</area>
+<keyword>uniform resource identifier</keyword>
+<keyword>URI</keyword>
+<keyword>URL</keyword>
+<keyword>URN</keyword>
+<keyword>WWW</keyword>
+<keyword>resource</keyword>
+<abstract>
+<t>
+A Uniform Resource Identifier (URI) is a compact sequence of characters
+that identifies an abstract or physical resource.  This specification
+defines the generic URI syntax and a process for resolving URI references
+that might be in relative form, along with guidelines and security
+considerations for the use of URIs on the Internet.
+The URI syntax defines a grammar that is a superset of all valid URIs,
+allowing an implementation to parse the common components of a URI
+reference without knowing the scheme-specific requirements of every
+possible identifier.  This specification does not define a generative
+grammar for URIs; that task is performed by the individual
+specifications of each URI scheme.
+</t></abstract></front>
+
+<seriesInfo name='STD' value='66' />
+<seriesInfo name='RFC' value='3986' />
+<format type='TXT' octets='141811' target='http://www.rfc-editor.org/rfc/rfc3986.txt' />
+<format type='HTML' octets='214067' target='http://xml.resource.org/public/rfc/html/rfc3986.html' />
+<format type='XML' octets='163534' target='http://xml.resource.org/public/rfc/xml/rfc3986.xml' />
+</reference>
+
+
+
+<reference anchor='RFC4086'>
+
+<front>
+<title>Randomness Requirements for Security</title>
+<author initials='D.' surname='Eastlake' fullname='D. Eastlake'>
+<organization /></author>
+<author initials='J.' surname='Schiller' fullname='J. Schiller'>
+<organization /></author>
+<author initials='S.' surname='Crocker' fullname='S. Crocker'>
+<organization /></author>
+<date year='2005' month='June' />
+<abstract>
+<t>Security systems are built on strong cryptographic algorithms that foil pattern analysis attempts. However, the security of these systems is dependent on generating secret quantities for passwords, cryptographic keys, and similar quantities. The use of pseudo-random processes to generate secret quantities can result in pseudo-security. A sophisticated attacker may find it easier to reproduce the environment that produced the secret quantities and to search the resulting small set of possibilities than to locate the quantities in the whole of the potential number space.&lt;/t>&lt;t> Choosing random quantities to foil a resourceful and motivated adversary is surprisingly difficult. This document points out many pitfalls in using poor entropy sources or traditional pseudo-random number generation techniques for generating such quantities. It recommends the use of truly random hardware techniques and shows that the existing hardware on many systems can be used for this purpose. It provides suggestions to ameliorate the problem when a hardware solution is not available, and it gives examples of how large such quantities need to be for some applications. This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</t></abstract></front>
+
+<seriesInfo name='BCP' value='106' />
+<seriesInfo name='RFC' value='4086' />
+<format type='TXT' octets='114321' target='http://www.rfc-editor.org/rfc/rfc4086.txt' />
+</reference>
+
+
+
+<reference anchor='RFC4648'>
+
+<front>
+<title>The Base16, Base32, and Base64 Data Encodings</title>
+<author initials='S.' surname='Josefsson' fullname='S. Josefsson'>
+<organization /></author>
+<date year='2006' month='October' />
+<abstract>
+<t>This document describes the commonly used base 64, base 32, and base 16 encoding schemes.  It also discusses the use of line-feeds in encoded data, use of padding in encoded data, use of non-alphabet characters in encoded data, use of different encoding alphabets, and canonical encodings. [STANDARDS-TRACK]</t></abstract></front>
+
+<seriesInfo name='RFC' value='4648' />
+<format type='TXT' octets='35491' target='http://www.rfc-editor.org/rfc/rfc4648.txt' />
+</reference>
+
+
+  </references>
+
+  <references title='Informative References'>
+
+
+
+<reference anchor='RFC5389'>
+
+<front>
+<title>Session Traversal Utilities for NAT (STUN)</title>
+<author initials='J.' surname='Rosenberg' fullname='J. Rosenberg'>
+<organization /></author>
+<author initials='R.' surname='Mahy' fullname='R. Mahy'>
+<organization /></author>
+<author initials='P.' surname='Matthews' fullname='P. Matthews'>
+<organization /></author>
+<author initials='D.' surname='Wing' fullname='D. Wing'>
+<organization /></author>
+<date year='2008' month='October' />
+<abstract>
+<t>Session Traversal Utilities for NAT (STUN) is a protocol that serves as a tool for other protocols in dealing with Network Address Translator (NAT) traversal. It can be used by an endpoint to determine the IP address and port allocated to it by a NAT. It can also be used to check connectivity between two endpoints, and as a keep-alive protocol to maintain NAT bindings. STUN works with many existing NATs, and does not require any special behavior from them.&lt;/t>&lt;t> STUN is not a NAT traversal solution by itself. Rather, it is a tool to be used in the context of a NAT traversal solution. This is an important change from the previous version of this specification (RFC 3489), which presented STUN as a complete solution.&lt;/t>&lt;t> This document obsoletes RFC 3489. [STANDARDS-TRACK]</t></abstract></front>
+
+<seriesInfo name='RFC' value='5389' />
+<format type='TXT' octets='125650' target='http://www.rfc-editor.org/rfc/rfc5389.txt' />
+</reference>
+
+
+
+<reference anchor='I-D.ietf-behave-turn'>
+<front>
+<title>Traversal Using Relays around NAT (TURN): Relay Extensions to Session Traversal Utilities for NAT (STUN)</title>
+
+<author initials='J' surname='Rosenberg' fullname='Jonathan Rosenberg'>
+    <organization />
+</author>
+
+<author initials='R' surname='Mahy' fullname='Rohan Mahy'>
+    <organization />
+</author>
+
+<author initials='P' surname='Matthews' fullname='Philip Matthews'>
+    <organization />
+</author>
+
+<date month='July' day='3' year='2009' />
+
+<abstract><t>If a host is located behind a NAT, then in certain situations it can be impossible for that host to communicate directly with other hosts (peers).  In these situations, it is necessary for the host to use the services of an intermediate node that acts as a communication relay.  This specification defines a protocol, called TURN (Traversal Using Relays around NAT), that allows the host to control the operation of the relay and to exchange packets with its peers using the relay.  TURN differs from some other relay control protocols in that it allows a client to communicate with multiple peers using a single relay address.  The TURN protocol was designed to be used as part of the ICE (Interactive Connectivity Establishment) approach to NAT traversal, though it can be also used without ICE.</t></abstract>
+
+</front>
+
+<seriesInfo name='Internet-Draft' value='draft-ietf-behave-turn-16' />
+<format type='TXT'
+        target='http://www.ietf.org/internet-drafts/draft-ietf-behave-turn-16.txt' />
+</reference>
+
+<reference anchor="STUNT" target="http://deusty.blogspot.com/2007/09/stunt-out-of-band-channels.html">
+  <front>
+    <title>STUNT &amp; out-of-band channels</title>
+
+    <author fullname="Robbie Hanson" initials="R" surname="Hanson">
+          <organization />
+
+</author>
+
+    <date month="September" day="17" year="2007" />
+
+
+</front>
+
+</reference>
+
+
+
+<reference anchor='I-D.meyer-xmpp-e2e-encryption'>
+<front>
+<title>XTLS: End-to-End Encryption for the Extensible Messaging and Presence Protocol (XMPP) Using Transport Layer Security (TLS)</title>
+
+<author initials='D' surname='Meyer' fullname='Dirk Meyer'>
+    <organization />
+</author>
+
+<author initials='P' surname='Saint-Andre' fullname='Peter Saint-Andre'>
+    <organization />
+</author>
+
+<date month='June' day='29' year='2009' />
+
+<abstract><t>This document specifies "XTLS", a protocol for end-to-end encryption of Extensible Messaging and Presence Protocol (XMPP) traffic.  XTLS is an application-level usage of Transport Layer Security (TLS) that is set up using the XMPP Jingle extension for session negotiation and transported using any streaming transport as the data delivery mechanism.  Thus XTLS treats the end-to-end exchange of XML stanzas as a virtual transport and uses TLS to secure that transport, enabling XMPP entities to communicate in a way that is designed to ensure the confidentiality and integrity XML stanzas.  The protocol can be used for secure end-to-end messaging as well as other XMPP applications, such as file transfer.</t></abstract>
+
+</front>
+
+<seriesInfo name='Internet-Draft' value='draft-meyer-xmpp-e2e-encryption-02' />
+<format type='TXT'
+        target='http://www.ietf.org/internet-drafts/draft-meyer-xmpp-e2e-encryption-02.txt' />
+</reference>
+
+
+
+<reference anchor='I-D.ietf-xmpp-3920bis'>
+<front>
+<title>Extensible Messaging and Presence Protocol (XMPP): Core</title>
+
+<author initials='P' surname='Saint-Andre' fullname='Peter Saint-Andre'>
+    <organization />
+</author>
+
+<date month='December' day='20' year='2010' />
+
+<abstract><t>The Extensible Messaging and Presence Protocol (XMPP) is an application profile of the Extensible Markup Language (XML) that enables the near-real-time exchange of structured yet extensible data between any two or more network entities.  This document defines XMPP's core protocol methods: setup and teardown of XML streams, channel encryption, authentication, error handling, and communication primitives for messaging, network availability ("presence"), and request-response interactions.  This document obsoletes RFC 3920.</t></abstract>
+
+</front>
+
+<seriesInfo name='Internet-Draft' value='draft-ietf-xmpp-3920bis-22' />
+<format type='TXT'
+        target='http://www.ietf.org/internet-drafts/draft-ietf-xmpp-3920bis-22.txt' />
+</reference>
+
+  </references>
+
+<section anchor="xmp" title="Examples">
+
+<t>This appendix provides some examples of the STuPiD protocol operation.</t>
+
+</section>
+
+</back>
+</rfc>
+

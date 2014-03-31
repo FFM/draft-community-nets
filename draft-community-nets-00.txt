@@ -1,0 +1,280 @@
+
+
+
+
+GAIA IRTF Group                                                L. Kaplan
+Internet-Draft                                            Funkfeuer Wien
+Intended status: Informational                               E. Baccelli
+Expires: October 4, 2014                                           INRIA
+                                                           April 2, 2014
+
+
+   A case study on community wireless networks - experiences from the
+                                trenches
+                    draft-community-wireless-nets-00
+
+Abstract
+
+   Roughly ten years ago, a huge number of so called community wireless
+   networks appeared worldwide, often employing mesh routing based on
+   cheap off the shelf Wi-Fi equipment and often enough covering whole
+   cities.  These community wireless networks had notable successes in
+   deploying results from the IETF MANET working group (for example OLSR
+   RFC3626 XXX fix reference properly XXX).  In addition, there have
+   been some interesting lessons learned from deploying these large
+   MANETs.  This document discusses the structures and findings of the
+   community networks.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at http://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on October 4, 2014.
+
+Copyright Notice
+
+   Copyright (c) 2014 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info) in effect on the date of
+
+
+
+Kaplan & Baccelli        Expires October 4, 2014                [Page 1]
+
+Internet-Draft                    CWNs                        April 2014
+
+
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+Table of Contents
+
+   1.  meta  . . . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Intro . . . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   3.  Disclaimer? . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   4.  Motivation for this draft . . . . . . . . . . . . . . . . . .   3
+   5.  Definitions . . . . . . . . . . . . . . . . . . . . . . . . .   3
+   6.  Why CWNs? . . . . . . . . . . . . . . . . . . . . . . . . . .   3
+   7.  History / Genesis . . . . . . . . . . . . . . . . . . . . . .   3
+   8.  Current situation / overview and description of existing CWNs   3
+   9.  A case study: details on FF . . . . . . . . . . . . . . . . .   3
+   10. case study 2: details on XYZ / Freifunk / ... . . . . . . . .   4
+   11. Lessons learned . . . . . . . . . . . . . . . . . . . . . . .   4
+   12. Reality check on current research topics: what is still
+       needed? Where to concentrate on?  . . . . . . . . . . . . . .   4
+   13. Bib . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   4
+   14. Meta  . . . . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     14.1.  Stuff needed . . . . . . . . . . . . . . . . . . . . . .   4
+   15. References  . . . . . . . . . . . . . . . . . . . . . . . . .   4
+     15.1.  Normative References . . . . . . . . . . . . . . . . . .   4
+     15.2.  Informative References . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Examples . . . . . . . . . . . . . . . . . . . . . .   5
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   5
+
+1.  meta
+
+   author: - ins: Funkfeuer name: L. Aaron Kaplan org: Funkfeuer.at
+   email: aaron@lo-res.org country: Austria role: editor - ins: INRIA
+   name: Emmanuel Baccelli org: Freie Universitaet, Institut fuer
+   Informatik role: editor street: Room 148, Takustrasse 9 city: Berlin
+   code: 14195 country: Germany phone: "+358407796297" email: Emmanuel
+   "dot" Baccelli "at" inria "dot" fr
+
+   o  url: https://etherpad.funkfeuer.at/p/I-D_CWNs
+
+2.  Intro
+
+3.  Disclaimer?
+
+   We are not claiming to be exhaustive for all CWNs You are welcome to
+   contribute... here is the gihub page and send us pull requests
+
+
+
+Kaplan & Baccelli        Expires October 4, 2014                [Page 2]
+
+Internet-Draft                    CWNs                        April 2014
+
+
+4.  Motivation for this draft
+
+   "here is the stuff where your results are actually used" -> MANET WG
+   and academic community for gaia: how to build these networks
+
+5.  Definitions
+
+   o  what is a CWN?  Comparison to MANETs.  Not every CWN is a MANET.
+      But where MANETs make sense in CWNs.
+
+6.  Why CWNs?
+
+   on a high level... * because we can * because it's fun: technical
+   experiment * because it helps with disaster recovery * because it can
+   help in suppressed internet situations * because they complement
+   existing cable based networks: cheap to build, filling up the white
+   spots on the broadband landscape
+
+7.  History / Genesis
+
+   o  consume.net, 2003 Freifunk, Funkfeuer, Paris Sans Fils, Seattle
+      Wireless, etc.
+
+8.  Current situation / overview and description of existing CWNs
+
+   o  how do they work?
+
+   o  which exist?
+
+   o  sizes and how to measure
+
+   o  differences between CWNs
+
+   o  categorisations
+
+   o  interactions (wireless summit, battlemesh)
+
+9.  A case study: details on FF
+
+   o  social aspects
+
+   o  legal aspects
+
+   o  special discussion on things relating to MANET WG
+
+   o  metrics
+
+   o  management of nodes
+
+
+
+Kaplan & Baccelli        Expires October 4, 2014                [Page 3]
+
+Internet-Draft                    CWNs                        April 2014
+
+
+10.  case study 2: details on XYZ / Freifunk / ...
+
+11.  Lessons learned
+
+   users of CWNs are describing their lessons learned * special
+   discussion on things relating to GAIA/MANET WG * metrics * security -
+   how to deal with routing security issues in CWNs? * legal framework
+   lacks/challenges
+
+12.  Reality check on current research topics: what is still needed?
+     Where to concentrate on?
+
+   (This is already an interpretation of the results of the previous
+   chapters) * what did we not yet manage to solve?  What are the most
+   stringent needs right now? * for example: * automatic channel
+   assignment - distributed agreement protocol * multi-topology *
+   multipath routing which is channel aware * metrics * CSN * routing
+   security - detection is important!
+
+13.  Bib
+
+   ... (generated)...
+
+14.  Meta
+
+14.1.  Stuff needed
+
+   github repo: * README.markdown * TIMELINE.md * HOWTO-contribute.md
+
+   "evangelism": * contact co-contributors * why should they contribute?
+   * what can the MANET WG learn?  GAIA?
+
+   howto work on github?: * send us pull requests! * initial master
+   editors: Emmanuel Baccelli , Aaron Kaplan
+
+15.  References
+
+15.1.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119, March 1997.
+
+   [RFC3986]  Berners-Lee, T., Fielding, R., and L. Masinter, "Uniform
+              Resource Identifier (URI): Generic Syntax", STD 66, RFC
+              3986, January 2005.
+
+   [RFC4086]  Eastlake, D., Schiller, J., and S. Crocker, "Randomness
+              Requirements for Security", BCP 106, RFC 4086, June 2005.
+
+
+
+Kaplan & Baccelli        Expires October 4, 2014                [Page 4]
+
+Internet-Draft                    CWNs                        April 2014
+
+
+   [RFC4648]  Josefsson, S., "The Base16, Base32, and Base64 Data
+              Encodings", RFC 4648, October 2006.
+
+15.2.  Informative References
+
+   [I-D.ietf-behave-turn]
+              Rosenberg, J., Mahy, R., and P. Matthews, "Traversal Using
+              Relays around NAT (TURN): Relay Extensions to Session
+              Traversal Utilities for NAT (STUN)", draft-ietf-behave-
+              turn-16 (work in progress), July 2009.
+
+   [I-D.ietf-xmpp-3920bis]
+              Saint-Andre, P., "Extensible Messaging and Presence
+              Protocol (XMPP): Core", draft-ietf-xmpp-3920bis-22 (work
+              in progress), December 2010.
+
+   [I-D.meyer-xmpp-e2e-encryption]
+              Meyer, D. and P. Saint-Andre, "XTLS: End-to-End Encryption
+              for the Extensible Messaging and Presence Protocol (XMPP)
+              Using Transport Layer Security (TLS)", draft-meyer-xmpp-
+              e2e-encryption-02 (work in progress), June 2009.
+
+   [RFC5389]  Rosenberg, J., Mahy, R., Matthews, P., and D. Wing,
+              "Session Traversal Utilities for NAT (STUN)", RFC 5389,
+              October 2008.
+
+   [STUNT]    Hanson, R., "STUNT & out-of-band channels", September
+              2007, <http://deusty.blogspot.com/2007/09/
+              stunt-out-of-band-channels.html>.
+
+Appendix A.  Examples
+
+   This appendix provides some examples of the STuPiD protocol
+   operation.
+
+Authors' Addresses
+
+   L. aaron Kaplan
+   Funkfeuer Wien
+
+   Email: aaron@lo-res.org
+
+
+   Emmanuel Baccelli
+   INRIA
+   Germany
+
+   Email: XXX
+
+
+
+Kaplan & Baccelli        Expires October 4, 2014                [Page 5]
